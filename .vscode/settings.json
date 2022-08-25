@@ -1,0 +1,7 @@
+{
+    "tailwindCSS.experimental.classRegex": [
+    
+    ],
+    "php.validate.executablePath": "",
+    "editor.formatOnSave": true
+}
