@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+$persian-green : #2A9D8F;
+$charcoal: #264653;
+$crayola: #E9C46A;
+$sandy-brown: #F4A261;
+$sienna: #E76F51;
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: 'Roboto', sans-serif;
+  }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+.sidebar{
+  /* black better? */
+  color: white;
+  padding: 10px;
+  background-color: $persian-green;
+  position: fixed;
+  height: 100%;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-break: break-all;
+  .container-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  h2{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav a{
+    margin: 0.2em;
+  }
+  .container-faq{
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 968px){
+  
+  .sidebar{
+    background:#F4A261;
+    bottom: 0;
+    height: 100px;
+    width: 100vw !important ;
+    flex-direction: row;
+    justify-content: space-between;
+    .container-title{
+      width: unset;
+      display: flex;
+      justify-content: center;
+      h2{
+        writing-mode: initial;
+      }
+    }
+    nav{
+      display: flex;
+      flex-direction: row;
+    }
+    .container-faq{
+      display: flex;
+    align-items: center;
+    }
+
+  }
+}
+
+
+.timer{
+  background: $charcoal;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .task-time{
+    font-size: 4em;
+  }
+  fieldset{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  input{
+    max-width: 280px;
+    width: 100%;
+    text-align: center;
+  }
+  .container-buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
